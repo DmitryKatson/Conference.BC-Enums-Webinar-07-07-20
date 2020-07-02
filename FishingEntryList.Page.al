@@ -30,10 +30,5 @@ page 50101 "Fishing Entry List"
         }
     }
 
-    trigger OnNewRecord(BelowxRec: Boolean)
-    begin
-        GetFishChoiceFromConfirmationDialog();
-    end;
-
 
 }

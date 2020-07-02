@@ -20,13 +20,4 @@ table 50100 "Fishing Entry"
         key(EntryNo; "Entry No.") { }
     }
 
-    procedure GetFishChoiceFromConfirmationDialog()
-    var
-        FishCoice: Page "Ocean Fish Choice Enums";
-    begin
-        FishCoice.LookupMode(true);
-        if FishCoice.RunModal() = Action::LookupOK then
-            Fish := FishCoice.ReturnEnteredChoice();
-    end;
-
 }
