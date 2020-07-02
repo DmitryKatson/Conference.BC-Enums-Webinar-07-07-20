@@ -15,4 +15,9 @@ page 50100 "Ocean Fish Choice Enums"
 
     var
         OceanFish: Enum "Ocean Fish";
+
+    procedure ReturnEnteredChoice(): Enum "Ocean Fish"
+    begin
+        exit(OceanFish);
+    end;
 }
