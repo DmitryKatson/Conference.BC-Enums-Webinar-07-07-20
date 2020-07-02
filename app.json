@@ -1,0 +1,25 @@
+{
+  "id": "d89495b9-c881-4e39-8ff2-5dc6f3f8f42b",
+  "name": "Enums",
+  "publisher": "Dmitry Katson",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "screenshots": [],
+  "platform": "16.0.0.0",
+  "application": "16.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://BC-Enums-Webinar-07-07-20.com/help/",
+  "showMyCode": true,
+  "runtime": "5.0"
+}
