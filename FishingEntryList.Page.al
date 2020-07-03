@@ -26,9 +26,20 @@ page 50101 "Fishing Entry List"
                 {
                     ApplicationArea = All;
                 }
+
+                field(EnumValueID; GetEnumValueID)
+                {
+                    ApplicationArea = All;
+                }
+                field(EnumValueCaption; GetEnumValueCaption)
+                {
+                    ApplicationArea = All;
+                }
+                field(EnumValueName; GetEnumValueName)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
-
-
 }
