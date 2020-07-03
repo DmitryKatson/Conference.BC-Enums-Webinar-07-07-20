@@ -16,7 +16,7 @@ page 50100 "Ocean Fish Choice Enums"
     var
         Fish: Enum "Lake Fish";
 
-    procedure ReturnEnteredChoice(): Enum "Lake Fish"
+    procedure ReturnEnteredChoice(): Integer
     begin
         exit(Fish);
     end;
