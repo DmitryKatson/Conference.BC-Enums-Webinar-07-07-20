@@ -12,4 +12,8 @@ enum 50101 "Lake Fish"
     {
 
     }
+    value(4; Sardine)
+    {
+
+    }
 }
