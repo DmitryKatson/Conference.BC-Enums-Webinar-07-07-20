@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[],"Modified":[{"Id":50100,"Kind":12,"Name":"Ocean Fish Choice Enums","PackagePath":"/src/OceanFishChoiceEnums.Page.al"},{"Id":50101,"Kind":12,"Name":"Fishing Entry List","PackagePath":"/src/FishingEntryList.Page.al"},{"Id":50100,"Kind":10,"Name":"Fishing Entry","PackagePath":"/src/FishingEntry.Table.al"}],"Removed":[]}
