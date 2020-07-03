@@ -42,4 +42,19 @@ page 50101 "Fishing Entry List"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(GetEnumFromText)
+            {
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    // GetEnumFromText(GetEnumValueCaption());
+                    GetEnumFromText(GetEnumValueName());
+                end;
+            }
+        }
+    }
 }
