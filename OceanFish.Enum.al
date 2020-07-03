@@ -8,7 +8,7 @@ enum 50100 "Ocean Fish"
     value(2; Grouper)
     {
     }
-    value(3; "Blue Marlin")
+    value(10; "Blue Marlin")
     {
 
     }
