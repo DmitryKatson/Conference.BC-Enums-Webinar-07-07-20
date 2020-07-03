@@ -1,7 +1,7 @@
 page 50100 "Ocean Fish Choice Enums"
 {
     PageType = ConfirmationDialog;
-    InstructionalText = 'Choose the fish you want to catch';
+    InstructionalText = 'Choose the fish you catched';
     layout
     {
         area(Content)
@@ -16,7 +16,7 @@ page 50100 "Ocean Fish Choice Enums"
     var
         OceanFish: Enum "Ocean Fish";
 
-    procedure ReturnEnteredChoice(): Enum "Ocean Fish"
+    procedure ReturnEnteredChoice(): Integer
     begin
         exit(OceanFish);
     end;
