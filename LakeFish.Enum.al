@@ -8,11 +8,11 @@ enum 50101 "Lake Fish"
     {
         Caption = 'Pink Salmon';
     }
-    value(3; Herring)
+    value(10; Herring)
     {
 
     }
-    value(4; Sardine)
+    value(14; Sardine)
     {
 
     }
