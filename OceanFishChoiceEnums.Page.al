@@ -6,7 +6,7 @@ page 50100 "Ocean Fish Choice Enums"
     {
         area(Content)
         {
-            field(OceanFish; Fish)
+            field(LakeFish; LakeFish)
             {
                 ApplicationArea = All;
             }
@@ -14,10 +14,10 @@ page 50100 "Ocean Fish Choice Enums"
     }
 
     var
-        Fish: Enum "Lake Fish";
+        LakeFish: Enum "Lake Fish";
 
     procedure ReturnEnteredChoice(): Integer
     begin
-        exit(Fish);
+        exit(LakeFish.AsInteger());
     end;
 }

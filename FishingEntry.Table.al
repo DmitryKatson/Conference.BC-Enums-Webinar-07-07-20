@@ -23,10 +23,10 @@ table 50100 "Fishing Entry"
 
     procedure GetFishChoiceFromConfirmationDialog()
     var
-        FishCoice: Page "Ocean Fish Choice Enums";
+        FishChoice: Page "Ocean Fish Choice Enums";
     begin
-        if FishCoice.RunModal() = Action::Yes then
-            Fish := FishCoice.ReturnEnteredChoice();
+        if FishChoice.RunModal() = Action::Yes then
+            Fish := "Ocean Fish".FromInteger(FishChoice.ReturnEnteredChoice());
     end;
 
 }
