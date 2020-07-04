@@ -1,5 +1,6 @@
 enum 50100 "Ocean Fish"
 {
+    Extensible = true;
 
     value(1; Tuna)
     {
