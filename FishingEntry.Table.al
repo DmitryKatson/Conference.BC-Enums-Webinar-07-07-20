@@ -6,10 +6,9 @@ table 50100 "Fishing Entry"
         {
             AutoIncrement = true;
         }
-        field(2; Fish; Option)
+        field(2; Fish; Enum "Ocean Fish")
         {
-            OptionMembers = ,Tuna,Grouper,"Blue Marlin";
-            OptionCaption = ',Atlantic bluefin tuna,Grouper,Blue Marlin';
+
         }
         field(3; Weight; Decimal)
         {
