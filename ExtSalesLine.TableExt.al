@@ -5,10 +5,18 @@ tableextension 50101 "ExtSalesLine" extends "Sales Line"
         if Rec."Document Type" = Rec."Document Type"::Order then
             Message('Document Type is %1', Rec."Document Type");
 
+        CreatePurchaseLineFromSalesLineIfNotExist();
         CheckIfThereIsPurchaseDocumentWithTheSameDocumentAndNumber();
     end;
 
-    local procedure CheckIfThereIsPurchaseDocumentWithTheSameDocumentAndNumber()
+    local procedure CreatePurchaseLineFromSalesLineIfNotExist()
+    begin
+        if CheckIfThereIsPurchaseDocumentWithTheSameDocumentAndNumber() then
+            exit;
+        CreatePurchaseLineFromSalesLine();
+    end;
+
+    local procedure CheckIfThereIsPurchaseDocumentWithTheSameDocumentAndNumber(): Boolean
     var
         PurchLine: Record "Purchase Line";
     begin
@@ -16,9 +24,18 @@ tableextension 50101 "ExtSalesLine" extends "Sales Line"
         PurchLine.SetRange("Document No.", Rec."Document No.");
         PurchLine.SetRange("Line No.", Rec."Line No.");
         PurchLine.SetRange(Type, Rec.Type);
-        if PurchLine.IsEmpty then
-            Message('Purchase Line does not exist')
-        else
-            Message('Purchase Line exist')
+        exit(PurchLine.IsEmpty);
+    end;
+
+    local procedure CreatePurchaseLineFromSalesLine()
+    var
+        PurchLine: Record "Purchase Line";
+    begin
+        PurchLine.Init();
+        PurchLine."Document Type" := Rec."Document Type";
+        PurchLine."Document No." := Rec."Document No.";
+        PurchLine."Line No." := Rec."Line No.";
+        PurchLine.Type := Rec.Type;
+        // do other stuff
     end;
 }
