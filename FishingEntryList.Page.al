@@ -21,7 +21,7 @@ page 50101 "Fishing Entry List"
                 field(Fish; Fish)
                 {
                     ApplicationArea = All;
-                    Editable = false;
+                    ValuesAllowed = Tuna, "Blue Marlin";
                 }
                 field(Weight; Weight)
                 {
@@ -30,13 +30,4 @@ page 50101 "Fishing Entry List"
             }
         }
     }
-
-    trigger OnNewRecord(BelowxRec: Boolean)
-    begin
-        if not BelowxRec then
-            exit;
-        GetFishChoiceFromConfirmationDialog();
-    end;
-
-
 }

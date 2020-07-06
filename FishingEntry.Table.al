@@ -19,14 +19,4 @@ table 50100 "Fishing Entry"
     {
         key(EntryNo; "Entry No.") { }
     }
-
-
-    procedure GetFishChoiceFromConfirmationDialog()
-    var
-        FishChoice: Page "Ocean Fish Choice Enums";
-    begin
-        if FishChoice.RunModal() = Action::Yes then
-            Fish := "Ocean Fish".FromInteger(FishChoice.ReturnEnteredChoice());
-    end;
-
 }
