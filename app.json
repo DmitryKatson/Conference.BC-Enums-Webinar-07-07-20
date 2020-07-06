@@ -11,8 +11,8 @@
   "url": "",
   "logo": "",
   "screenshots": [],
-  "platform": "16.0.0.0",
-  "application": "16.0.0.0",
+  "platform": "15.0.0.0",
+  "application": "15.0.0.0",
   "idRanges": [
     {
       "from": 50100,
@@ -21,5 +21,5 @@
   ],
   "contextSensitiveHelpUrl": "https://BC-Enums-Webinar-07-07-20.com/help/",
   "showMyCode": true,
-  "runtime": "5.0"
+  "runtime": "4.0"
 }
