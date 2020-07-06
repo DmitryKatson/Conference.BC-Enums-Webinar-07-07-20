@@ -15,4 +15,24 @@ codeunit 50100 "OptLookup Buffer Subscr"
         end;
     end;
 
+
+    [EventSubscriber(ObjectType::Table, Database::"Option Lookup Buffer", 'OnBeforeInsertEvent', '', false, false)]
+    local procedure AddFishDescriptionToOptionLookupBuffer(var Rec: Record "Option Lookup Buffer")
+    var
+        SalesLine: Record "Sales Line";
+        IndexOfFishType: Integer;
+    begin
+        if Rec."Lookup Type" <> Rec."Lookup Type"::Sales then
+            exit;
+
+        IndexOfFishType := SalesLine.Type.Ordinals.IndexOf(SalesLine.Type::"AIR Fish".AsInteger()) - 1;
+        if Rec.ID = IndexOfFishType then begin
+            Rec.ID := "Sales Line Type"::"AIR Fish".AsInteger();
+            Rec."Option Caption" := Format("Sales Line Type"::"AIR Fish");
+        end;
+
+    end;
+
+
+
 }
