@@ -33,6 +33,7 @@ tableextension 50101 "ExtSalesLine" extends "Sales Line"
     begin
         PurchLine.Init();
         PurchLine."Document Type" := Rec."Document Type";
+        PurchLine.MyDocumentType := Rec."Document Type";
         PurchLine."Document No." := Rec."Document No.";
         PurchLine."Line No." := Rec."Line No.";
         PurchLine.Type := Rec.Type;
