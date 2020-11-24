@@ -1,4 +1,4 @@
-page 50100 "Ocean Fish Choice Enums"
+page 50103 "Lake Fish Choice Enums"
 {
     PageType = ConfirmationDialog;
     InstructionalText = 'Choose the fish you catched';
