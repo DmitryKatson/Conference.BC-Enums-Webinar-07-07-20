@@ -18,7 +18,7 @@ page 50101 "Fishing Entry List"
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field(Fish; Rec.Fish)
+                field(Fish; Rec.OceanFish)
                 {
                     ApplicationArea = All;
                     Editable = false;
