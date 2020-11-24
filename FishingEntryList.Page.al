@@ -13,17 +13,17 @@ page 50101 "Fishing Entry List"
         {
             repeater(General)
             {
-                field("Entry No."; "Entry No.")
+                field("Entry No."; Rec."Entry No.")
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field(Fish; OceanFish)
+                field(Fish; Rec.OceanFish)
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field(Weight; Weight)
+                field(Weight; Rec.Weight)
                 {
                     ApplicationArea = All;
                 }
