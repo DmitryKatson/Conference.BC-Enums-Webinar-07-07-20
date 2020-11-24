@@ -13,17 +13,17 @@ page 50101 "Fishing Entry List"
         {
             repeater(General)
             {
-                field("Entry No."; "Entry No.")
+                field("Entry No."; Rec."Entry No.")
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field(Fish; Fish)
+                field(Fish; Rec.Fish)
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field(Weight; Weight)
+                field(Weight; Rec.Weight)
                 {
                     ApplicationArea = All;
                 }
@@ -35,7 +35,7 @@ page 50101 "Fishing Entry List"
     begin
         if not BelowxRec then
             exit;
-        GetFishChoiceFromConfirmationDialog();
+        Rec.GetFishChoiceFromConfirmationDialog();
     end;
 
 
