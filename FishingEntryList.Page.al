@@ -13,29 +13,29 @@ page 50101 "Fishing Entry List"
         {
             repeater(General)
             {
-                field("Entry No."; "Entry No.")
+                field("Entry No."; Rec."Entry No.")
                 {
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field(Fish; Fish)
+                field(Fish; Rec.Fish)
                 {
                     ApplicationArea = All;
                 }
-                field(Weight; Weight)
+                field(Weight; Rec.Weight)
                 {
                     ApplicationArea = All;
                 }
 
-                field(EnumValueID; GetEnumValueID)
+                field(EnumValueID; Rec.GetEnumValueID())
                 {
                     ApplicationArea = All;
                 }
-                field(EnumValueCaption; GetEnumValueCaption)
+                field(EnumValueCaption; Rec.GetEnumValueCaption())
                 {
                     ApplicationArea = All;
                 }
-                field(EnumValueName; GetEnumValueName)
+                field(EnumValueName; Rec.GetEnumValueName())
                 {
                     ApplicationArea = All;
                 }
