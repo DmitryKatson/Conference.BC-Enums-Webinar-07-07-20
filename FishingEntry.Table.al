@@ -25,6 +25,11 @@ table 50100 "Fishing Entry"
         exit(Format(Fish));
     end;
 
+    procedure GetEnumIndexID(): Integer;
+    begin
+        exit(Fish.Ordinals.IndexOf(GetEnumValueID()));
+    end;
+
     procedure GetEnumValueID(): Integer;
     begin
         exit(Fish.AsInteger());
