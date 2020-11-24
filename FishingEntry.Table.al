@@ -56,4 +56,23 @@ table 50100 "Fishing Entry"
 
         Message(Format(OceanFish));
     end;
+
+    procedure ShowBestLocation()
+    var
+        IFishing: Interface IFishing;
+        Lat: Decimal;
+        Lon: Decimal;
+    begin
+        IFishing := Rec.Fish;
+        IFishing.GetBestLocation(Lat, Lon);
+        Hyperlink(StrSubstNo('http://www.google.com/maps/place/%1,%2', Lat, Lon));
+    end;
+
+    procedure ShowBestSeason()
+    var
+        IFishing: Interface IFishing;
+    begin
+        IFishing := Rec.Fish;
+        Message(IFishing.GetBestSeason());
+    end;
 }

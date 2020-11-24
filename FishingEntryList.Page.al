@@ -60,6 +60,32 @@ page 50101 "Fishing Entry List"
                     Rec.GetEnumFromText(Rec.GetEnumValueName());
                 end;
             }
+            action(BestLocation)
+            {
+                ApplicationArea = all;
+                Image = Map;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                trigger OnAction()
+                begin
+                    Rec.ShowBestLocation();
+                end;
+            }
+            action(BestSeason)
+            {
+                ApplicationArea = all;
+                Image = Calendar;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                trigger OnAction()
+                begin
+                    Rec.ShowBestSeason();
+                end;
+            }
         }
     }
 }

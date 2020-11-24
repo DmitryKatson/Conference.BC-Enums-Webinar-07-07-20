@@ -3,5 +3,6 @@
     "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.OnSaveAlFileAction": "Rename",
-    "CRS.RenameWithGit": true
+    "CRS.RenameWithGit": true,
+    "bdev-al-xml-doc.checkProcedureDocumentation": false
     }
