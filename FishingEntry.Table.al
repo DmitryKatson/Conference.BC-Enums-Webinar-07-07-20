@@ -6,7 +6,7 @@ table 50100 "Fishing Entry"
         {
             AutoIncrement = true;
         }
-        field(2; Fish; Enum "Ocean Fish")
+        field(2; OceanFish; Enum "Ocean Fish")
         {
 
         }
@@ -23,10 +23,10 @@ table 50100 "Fishing Entry"
 
     procedure GetFishChoiceFromConfirmationDialog()
     var
-        FishCoice: Page "Ocean Fish Choice Enums";
+        LakeFishCoice: Page "Lake Fish Choice Enums";
     begin
-        if FishCoice.RunModal() = Action::Yes then
-            Fish := FishCoice.ReturnEnteredChoice();
+        if LakeFishCoice.RunModal() = Action::Yes then
+            OceanFish := LakeFishCoice.ReturnEnteredChoice();
     end;
 
 }

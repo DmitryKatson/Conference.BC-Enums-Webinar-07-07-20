@@ -18,7 +18,7 @@ page 50101 "Fishing Entry List"
                     ApplicationArea = All;
                     Editable = false;
                 }
-                field(Fish; Fish)
+                field(Fish; OceanFish)
                 {
                     ApplicationArea = All;
                     Editable = false;
@@ -31,12 +31,24 @@ page 50101 "Fishing Entry List"
         }
     }
 
-    trigger OnNewRecord(BelowxRec: Boolean)
-    begin
-        if not BelowxRec then
-            exit;
-        GetFishChoiceFromConfirmationDialog();
-    end;
-
-
+    actions
+    {
+        area(Creation)
+        {
+            action(SelectType)
+            {
+                Caption = 'Select Type';
+                Promoted = true;
+                PromotedOnly = true;
+                PromotedCategory = New;
+                PromotedIsBig = true;
+                Image = Select;
+                ApplicationArea = all;
+                trigger OnAction()
+                begin
+                    Rec.GetFishChoiceFromConfirmationDialog();
+                end;
+            }
+        }
+    }
 }
